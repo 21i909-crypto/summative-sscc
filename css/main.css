@@ -56,6 +56,9 @@ a{
     padding: 2px;
     font-size: 21px;
 }
+a:hover{
+    color: aqua;
+}
 main{
     background-color: beige;
     color: black;
