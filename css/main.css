@@ -1,0 +1,156 @@
+/*
+How to write CSS rule:
+target { rule-name: rule-value; }
+
+Possible Target:
+- HTML element (<header>)
+- Elements w/ Assigned Class (.grid-box)
+- Elements w/ Assigned ID (#menu)
+
+Example:
+1. Change text color in a container with assigned class name "demo"
+.demo { 
+    color:red;
+}
+
+2. 2px black border with 15px padding all around for an element with assigned class name "box" in a container with assigned class name "grid-container"
+.grid-container .box {
+    border:2px solid black;
+    padding:15px;
+*/
+
+/* Content Starter */
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: rgb(57, 90, 57);
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: black;
+    position: sticky;
+    top: 0;
+}
+#logo {
+    flex: 1;
+    font-size: 20px;
+    border: 5px ridge white;
+    padding: 5px 15px;
+    text-align: center;
+}
+#slogan{
+    flex: 2;
+    color: aquamarine;
+    font-size: 32px;
+    text-align: center;
+}
+#menu{
+    flex: 1;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    font-size: 21px;
+}
+main{
+    background-color: beige;
+    color: black;
+    padding: 30px 100px;
+}
+#header{
+    color: red;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+/*Home page*/
+#main-image{
+    width: 100%;
+    margin-bottom: 50px;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+}
+#page-copy{
+    font-size: 16px;
+    margin: 10px;
+}
+#space{
+    height: 500px; /*The extra space is just to show the sticky position of the menu bar.*/
+}
+/*Schedule Page*/
+table{
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+table > tbody> tr> th {
+    font-size: 20px;
+    border: 2px solid grey;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: auto;
+}
+table > tbody> tr > td {
+    font-size: 20px;
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+#first-col{
+    background-color: black;
+    color: white;
+    border: 2px solid grey;
+}
+/*Treatment Page*/
+.grid{
+    display: grid;
+    grid-template-columns: 6fr 3fr 3fr;
+    gap: 20px;
+}
+#box{
+    border: 2px solid black;
+    padding: 15px;
+    text-align: center;
+}
+#treatment-image{
+    width: 100%;
+    margin-top: 30px;
+}
+hr{
+    margin: 50px;
+}
+/* Footer for all pages */
+footer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Table Starter */
+#schedule-table { 
+    border-collapse:collapse;
+}
+#schedule-table > tbody > tr > th,
+#schedule-table > tbody> tr > td { 
+    border:1px solid black;
+}
+
+/* Grid Box Starter */
+/* REMEMBER 1: There are placeholders in the rule, please change them accordingly */
+/* REMEMBER 2: This is to initiate grid display, you still need to assign rules for its children to determine how many grid columns they take up respectively */
+.grid-container { 
+    display:grid; 
+    grid-template-columns:repeat([number of times],[unit]); 
+    gap:[value]
+}
