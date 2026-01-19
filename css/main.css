@@ -142,6 +142,13 @@ hr{
     margin-bottom: 30px;
     justify-content: center;
 }
+#reflection-teacher-response{
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: red;
+    text-align: center;
+}
 /* Footer for all pages */
 footer{
     background-color: black;
